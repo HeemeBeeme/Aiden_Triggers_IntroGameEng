@@ -4,7 +4,7 @@ using UnityEngine;
 public class TriggersActivity : MonoBehaviour
 {
     public GameObject Orb;
-
+    public Vector3 OrbPosition;
     void OnTriggerEnter(Collider other)
     {
         Debug.Log("Trigger Entered By: " + other.gameObject.name);
@@ -13,6 +13,7 @@ public class TriggersActivity : MonoBehaviour
     void OnTriggerExit(Collider other)
     {
         Debug.Log("Trigger Exited By: " + other.gameObject.name);
+        Orb.transform.position = OrbPosition;
         Orb.SetActive(true);
     }
 }
