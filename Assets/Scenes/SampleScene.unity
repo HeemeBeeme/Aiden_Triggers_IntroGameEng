@@ -2837,9 +2837,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1313913841}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0b0a514bd0dd08e419074f7ee11430b7, type: 3}
+  m_Script: {fileID: 11500000, guid: f374969cdcc9e444caf2268689f4e65d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OrbAnimator: {fileID: 2042794710}
 --- !u!43 &1376979916
 Mesh:
   m_ObjectHideFlags: 0
@@ -3247,6 +3248,7 @@ GameObject:
   - component: {fileID: 2042794708}
   - component: {fileID: 2042794707}
   - component: {fileID: 2042794706}
+  - component: {fileID: 2042794710}
   m_Layer: 0
   m_Name: Orb
   m_TagString: Untagged
@@ -3343,6 +3345,28 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &2042794710
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2042794705}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 945bdbcb19e2ba345b1d40285e45e333, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &2147411104
 GameObject:
   m_ObjectHideFlags: 0
@@ -3357,7 +3381,7 @@ GameObject:
   - component: {fileID: 2147411105}
   - component: {fileID: 2147411109}
   m_Layer: 0
-  m_Name: Colour
+  m_Name: Activity
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3464,6 +3488,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b0a514bd0dd08e419074f7ee11430b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Orb: {fileID: 2042794705}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
